@@ -1,2 +1,1 @@
-# UFF 3o Periodo
- Arquivos do meu 3º período de estudos da UFF.
+# Estruturas de dados e seus algoritmos - 3º Período UFF
