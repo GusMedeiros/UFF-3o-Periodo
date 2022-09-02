@@ -37,7 +37,7 @@ double* Polinomio_integrar(double* vetor, int* tamanho){
     return novo_vetor;
 }
 void main(){
-    int grau = INT_MAX;
+    int grau;
     while(grau >=0){
         printf("Insira o grau do polinomio:\n");
         scanf("%d", &grau);
