@@ -22,16 +22,27 @@ TAB *vet2ab(int* vet, int n){ // funcao que pega o meio do vetor, cria uma árvo
     return TAB_cria(vet[n/2], vet2ab(vet, n/2 - 1), vet2ab(&vet[n/2 + 1], n/2));
 }
 
-char* TAB2str(TAB* ab){
-    if(!ab) return "";
-    return "[%d[%s][%s]]", ab->info, TAB2str(ab->esquerda), TAB2str(ab->direita);
+void TAB_print_line(TAB* ab){
+    printf("[");
+    if(ab == NULL){
+        printf("]");
+        return;
+    }
+    printf("%d", ab->info);
+    TAB_print_line(ab->esquerda);
+    TAB_print_line(ab->direita);
+    printf("]");
+
 }
 
 int main(void){
-    TAB *a3 = TAB_cria(3, NULL, NULL),
-    *a4 = TAB_cria(4, NULL, NULL),
-    *a5 = TAB_cria(5, NULL, NULL),    *a2 = TAB_cria(2, a4, a5),
-    *raiz = TAB_cria(1, a2, a3);
-    printf("%s", TAB2str(raiz));
+    TAB* tab15 = TAB_cria(15, NULL, NULL);
+    TAB* tab25 = TAB_cria(25, NULL, NULL);
+    TAB* tab35 = TAB_cria(35, NULL, NULL);
+    TAB* tab45 = TAB_cria(45, NULL, NULL);
+    TAB* tab20 = TAB_cria(20, tab15, tab25);
+    TAB* tab40 = TAB_cria(40, tab35, tab45);
+    TAB* tab30 = TAB_cria(30, tab20, tab40);
+    TAB_print_line(tab30);
     return 0;
 }

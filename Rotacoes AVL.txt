@@ -1,0 +1,17 @@
+Subárvore esquerda = S.E
+Subárvore direita = S.D
+=============================
+Rotacionar para a esquerda é fazer com que:
+S.D inicial vire a nova raiz,
+S.E da S.D inicial vire a nova S.D da da antiga raiz
+raiz antiga vire a S.E da nova raiz.
+
+A rotação para a esquerda transfere 1 de altura da S.D para a S.E.
+=============================
+Rotacionar para a direita é fazer com que:
+S.E inicial vire a nova raiz,
+S.D da S.E inicial vire a nova S.E da antiga raiz
+raiz antiga vire a S.D da nova raiz.
+
+A rotação para a direita transfere 1 de altura da S.E para a S.D.
+=============================
