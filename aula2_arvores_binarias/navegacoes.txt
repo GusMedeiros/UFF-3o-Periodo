@@ -1,0 +1,41 @@
+Árvore exemplo:
+                N
+            G
+                N
+        D
+                N
+            F
+                N
+    A
+            N
+        B
+                N
+            E
+                N
+
+
+pre-order (depth first)
+    raiz, esquerda, direita
+    o que resulta em: A, B, E, D, F, G
+
+in order (simetrico)
+    esquerda, raiz, direita
+    o que resulta em: E, B, A, F, D, G
+post order
+    esquerda, direita, raiz
+    o que resulta em: E, B, F, G, D, A
+
+
+exercicio:
+
+pre ordem:
+    130, 100, 83, 120, 200, 150, 230
+
+em ordem:
+    83, 100, 120, 130, 150, 200, 230
+
+pós ordem:
+    83, 120, 100, 150, 230, 200, 130
+
+largura:
+    130, 100, 200, 83, 120, 150, 230
