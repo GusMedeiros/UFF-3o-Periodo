@@ -4,4 +4,4 @@ project(UFF_3_Estruturas_de_dados_e_seus_algoritmos C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(UFF_3_Estruturas_de_dados_e_seus_algoritmos
-        aula3_arvore_de_busca/teste.c)
+        aula4_AVL/teste.c aula5_grafos/grafo.c)
