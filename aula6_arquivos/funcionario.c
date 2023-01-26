@@ -70,3 +70,5 @@ int tamanho() {
            + sizeof(char) * 11 //data_nascimento
            + sizeof(double); //salario
 }
+
+
